@@ -1,0 +1,313 @@
+@import "../../../../variables";
+
+.mainVideoContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  .backButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 12px 8px;
+    border-radius: 8px;
+    &:hover {
+      background-color: $WhiteHover;
+    }
+    .title {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .backIcon {
+      font-size: 1.5em;
+      margin-right: 10px;
+    }
+  }
+}
+
+.videosContainer {
+  padding: 20px;
+  height: auto;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.videoList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.thumbnailContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background-color: $LightGray;
+  border-radius: 8px;
+  overflow: hidden;
+  .duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: $White;
+    background-color: $transparentDark;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.videoTitle {
+  font-size: 14px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.selectMainContainer {
+  width: $trainingSidebarWidth;
+  flex-shrink: 0;
+  display: flex;
+  position: sticky;
+  top: 24px;
+  flex-direction: column;
+  gap: 16px;
+  max-height: calc(100vh - 48px);
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 250px;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.groupIcon {
+  font-size: 2em;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  /* Ensure the top div takes full width */
+}
+
+.groupIcon {
+  flex-shrink: 0;
+  /* Prevent the icon from shrinking */
+}
+
+.mainmember {
+  padding-left: 16px;
+  margin-left: 8px;
+  border-left: 1px solid $BorderForm;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.resetUsers {
+  margin-left: auto;
+}
+
+.memberTitle,
+.memberItems {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.resetText {
+  font-size: 14px;
+  color: $Button;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  cursor: pointer;
+  &:hover {
+    color: $ButtonHover;
+  }
+}
+
+.memberTitle {
+  color: $TextLabel;
+  font-size: 13px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.selectedUsersTable {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow-y: auto;
+  border-radius: 16px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.videoIcon {
+  font-size: 2em;
+  color: $Button;
+}
+
+.submitButton {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  background-color: $Button;
+  color: white;
+  font-weight: 600;
+  &:hover {
+    background-color: $ButtonHover;
+  }
+  &:active {
+    background-color: $ButtonActive;
+  }
+}
+
+.submitButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
+  background-color: $ButtonDisabled;
+}
+
+.draggableVideo {
+  cursor: move;
+}
+
+.videotop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.selectedVideosContainer {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.selectedVideoRow {
+  padding: 8px 16px 8px 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 5px;
+  border: $BorderForm 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: $WhiteHover;
+  }
+}
+
+.removeIcon {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: red;
+  flex-shrink: 0;
+  /* Prevents the icon from shrinking */
+}
+
+.selectedVideoThumbnail {
+  flex-shrink: 0;
+  width: 50px;
+  height: 35px;
+  object-fit: fill;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.selectedVideoTitle {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.clickableVideo {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  .tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    .tag {
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      padding: 2px 6px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      color: #333;
+    }
+  }
+}
+
+.clickableVideo:hover {
+  transform: scale(1.05);
+}
+
+/* .selectedVideo {
+    border: 1px solid #007bff79;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.178);
+    border-radius: 8px;
+} */

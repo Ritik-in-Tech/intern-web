@@ -1,0 +1,55 @@
+@import "../../../variables";
+
+.pagination {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.paginationButton {
+  background-color: $White;
+  border: $Border 1px solid;
+  color: $TextLabel;
+  padding: 8px 12px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px;
+  &:hover {
+    background-color: $WhiteHover;
+  }
+}
+.paginationText {
+  font-size: 15px;
+  padding: 8px 12px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.paginationText:hover {
+  text-decoration: underline;
+}
+
+.activePage {
+  background-color: $Button;
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.paginationButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.paginationButton.activePage {
+  background-color: $Button;
+  color: white;
+  font-weight: 600;
+}

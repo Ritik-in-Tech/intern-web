@@ -1,0 +1,100 @@
+@import "../../../variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: 20px;
+  height: auto;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.pagePath {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.videoSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  margin: 0;
+}
+
+.addButton {
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  width: 18%;
+  cursor: pointer;
+}
+
+.rowButon {
+  cursor: pointer;
+}
+
+.tableContainer {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: auto;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 500px;
+}
+
+.searchIcon {
+  margin-right: 8px;
+  color: #999;
+}
+
+.searchInput {
+  border: none;
+  padding: 12px 4px;
+  width: 300px;
+  outline: none;
+  font-size: 14px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.textButton {
+  background: none;
+  border: none;
+  color: $Button;
+  padding: 0;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}

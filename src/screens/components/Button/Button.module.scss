@@ -1,0 +1,42 @@
+@import "../../../variables";
+
+.button {
+  display: inline-block;
+  width: auto;
+  padding: 8px 24px;
+  color: $White;
+  background-color: $Button;
+  border-radius: 8px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  &[data-theme="red"] {
+    background-color: $White;
+    color: $Red;
+    border: 1px solid $Red;
+    &:hover {
+      background-color: $RedHover;
+    }
+  }
+  &[data-theme="blue"] {
+    background-color: $White;
+    color: rgba(59, 130, 246, 1);
+    border: 1px solid rgba(59, 130, 246, 1);
+    &:hover {
+      background-color: rgba(0, 0, 255, 0.164);
+    }
+  }
+  &:hover {
+    background-color: $ButtonHover;
+  }
+  &:active {
+    background-color: $ButtonActive;
+  }
+  &[disabled] {
+    background-color: $ButtonDisabled;
+    color: $TextDisabled;
+    cursor: not-allowed;
+  }
+}

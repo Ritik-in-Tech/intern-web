@@ -1,0 +1,113 @@
+@import "../../../../variables";
+
+.videoDetailContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $White;
+  border-radius: 16px;
+}
+
+.pagePath {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.videoSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  margin: 0;
+}
+
+.addButton {
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  width: 13%;
+  cursor: pointer;
+}
+
+.buttonOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.separator {
+  height: 1px;
+  background-color: rgba(3, 3, 3, 0.349);
+  border: none;
+  margin-bottom: 20px;
+}
+
+.detailItem {
+  margin-bottom: 24px;
+}
+
+.detailLabel {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: $TextLabel;
+}
+
+.detailContent {
+  font-size: 16px;
+}
+
+.thumbnailBox {
+  height: 200px;
+  aspect-ratio: 3 / 2;
+  background-color: $LightGray;
+  margin-bottom: 12px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.videoPlayerBox {
+  margin-bottom: 12px;
+  height: 200px;
+  background-color: $LightGray;
+  aspect-ratio: 3 / 2;
+}
+
+.videoPlayerBox video {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: contain;
+  object-position: center;
+}

@@ -1,0 +1,48 @@
+@import "../../../variables";
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 48px 48px;
+  background-color: $White;
+  border-radius: 16px;
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    &__item {
+      font-size: 14px;
+      color: $TextLabel;
+      &:last-of-type {
+        font-weight: 600;
+      }
+    }
+    &__arrow {
+      font-size: 14px;
+      color: $TextLight;
+    }
+  }
+  .breadcrumb_clickable {
+    cursor: pointer;
+    text-decoration: underline;
+    color: $Button;
+    font-weight: 500;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $Border;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__subtitle {
+    font-size: 1em;
+    color: #666;
+  }
+}

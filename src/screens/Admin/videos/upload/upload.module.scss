@@ -1,0 +1,122 @@
+.uploadContainer {
+  h2 {
+    text-align: left;
+    margin-bottom: 25px;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .custom {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  input[type="text"],
+  textarea,
+  input[type="file"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+
+  input[type="file"] {
+    padding: 5px;
+  }
+
+  button {
+    display: block;
+    width: 10%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Helper text styles */
+  p {
+    color: #777;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  /* Optional - Align the file inputs for better visual consistency */
+  input[type="file"] + p {
+    margin-top: -5px;
+    margin-bottom: 15px;
+  }
+
+  /* Focus and error states */
+  input[type="text"]:focus,
+  textarea:focus,
+  input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .error {
+    border-color: red;
+  }
+
+  .error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .toast-container {
+    width: 100px;
+  }
+
+  .toast-message {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  /* upload.module.scss */
+
+  /* Progress Bar Container */
+  .progress-bar {
+    width: 100%;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Progress Fill */
+  .progress {
+    height: 20px;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    transition: width 0.4s ease;
+    /* Smooth transition for the fill */
+  }
+}

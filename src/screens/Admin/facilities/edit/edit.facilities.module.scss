@@ -1,0 +1,74 @@
+.container {
+  max-width: 900px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagePath {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.boldtext {
+  font-size: 15px;
+  margin-right: 10px;
+  color: black;
+  font-weight: 700;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.submitButton {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}

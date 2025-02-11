@@ -1,0 +1,30 @@
+/* src/components/login.module.scss */
+@import "../../../_variables.scss";
+
+.container {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $LightGray;
+}
+
+.loginBox {
+  background-color: $White;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 470px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.toast-container {
+  width: 100px;
+}
+
+.toast-message {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+}

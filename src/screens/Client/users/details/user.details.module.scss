@@ -1,0 +1,85 @@
+@import "../../../../variables";
+
+.Container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.medicalHistory {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 40px 48px 48px;
+  background-color: $White;
+  border-radius: 16px;
+}
+
+.pagePath {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  margin: 0;
+}
+
+.buttonOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editButton {
+  margin-right: 10px;
+  width: 150px;
+}
+
+.separator {
+  height: 1px;
+  background-color: rgba(3, 3, 3, 0.349);
+  border: none;
+  margin-bottom: 20px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.detailLabel {
+  /* font-weight: 600; */
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.detailContent {
+  padding: 2px;
+  color: #555;
+}
+
+.medicaldetailContent {
+  padding: 2px;
+  color: #080707;
+}
+.age {
+  margin-left: 2px;
+  color: #666;
+}

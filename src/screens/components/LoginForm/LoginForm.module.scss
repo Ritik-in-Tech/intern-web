@@ -1,0 +1,100 @@
+@import "../../../variables";
+
+.loginBox {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: $White;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .inputContainer {
+    padding: 20px 24px 32px;
+  }
+  .title {
+    color: $White;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    &__logo {
+      font-size: 1.3rem;
+    }
+    &__role {
+      font-size: 1rem;
+    }
+  }
+
+  .form {
+    padding: 40px 40px 56px;
+  }
+
+  .optionalText {
+    text-align: center;
+    // margin: 10px 0;
+    margin-top: 12px;
+    font-size: 14px;
+    color: $TextLabel;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .topText {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: $Text;
+  }
+
+  .inputGroup {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 16px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 13px;
+      color: $TextLabel;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  }
+
+  .loginButton {
+    width: 100%;
+    padding: 10px;
+    margin-top: 32px;
+    color: $White;
+    background-color: $ButtonGray;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    &:hover {
+      background-color: $ButtonGrayHover;
+    }
+  }
+
+  &[data-type="admin"] {
+    .title {
+      background-color: $AdminPrimary;
+    }
+  }
+  &[data-type="client"] {
+    .title {
+      background-color: $ClientPrimary;
+    }
+  }
+}

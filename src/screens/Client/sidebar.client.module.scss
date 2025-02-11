@@ -1,0 +1,174 @@
+@import "../../variables";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 260px;
+  box-sizing: border-box;
+
+  .header {
+    background-color: $ClientPrimary;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    .logo {
+      font-size: 24px;
+    }
+    .subTitle {
+      font-size: 16px;
+      font-weight: 600;
+      white-space: nowrap;
+      margin: 0;
+    }
+  }
+  .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 16px 16px;
+    .trainingButton {
+      border-radius: 8px;
+      width: 100%;
+      text-align: center;
+      background-color: $ButtonGray;
+      border: 4px solid rgb(184, 180, 180);
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 16px;
+      &:hover {
+        background-color: $ButtonGrayHover;
+      }
+    }
+
+    .trainerContainer:hover {
+      background-color: #f0f0f0;
+    }
+
+    .trainerContainer.active {
+      background-color: #d0d0d0;
+    }
+
+    .trainer {
+      color: white;
+    }
+
+    .nav {
+      flex-grow: 1;
+    }
+
+    .navList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navItem {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+      margin-bottom: 8px;
+    }
+
+    .navLink {
+      display: flex;
+      align-items: center;
+      color: inherit;
+      font-size: 0.95em;
+      font-weight: 600;
+      text-decoration: none;
+      width: 100%;
+      padding: 8px 4px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: $WhiteHover;
+      }
+    }
+
+    .active {
+      background-color: $ClientPrimary;
+      font-weight: 600;
+      color: #ffffff;
+      cursor: default;
+      &:hover {
+        background-color: $ClientPrimary;
+      }
+    }
+
+    .icon {
+      margin-right: 10px;
+      font-size: 1.5em;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .profileImage {
+      width: 40px;
+      height: 40px;
+      margin-right: 4px;
+    }
+
+    .profileInfo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profileContainer {
+      display: flex;
+      align-items: center;
+    }
+
+    .roleContainer {
+      margin-left: 8px;
+      padding: 2px 4px;
+      border: $Border solid 1px;
+      border-radius: 6px;
+      background-color: $WhiteHover;
+    }
+
+    .role {
+      margin: 0;
+      font-size: 12px;
+      font-weight: bold;
+      color: $ClientPrimary;
+      font-family: "Inter", sans-serif;
+      word-break: keep-all;
+    }
+
+    .profileName {
+      margin-bottom: 4px;
+      font-size: 18px;
+    }
+
+    .profileDetails {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      img {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+      }
+      p {
+        font-size: 13px;
+        font-weight: 400;
+        color: $TextLabel;
+      }
+    }
+  }
+}

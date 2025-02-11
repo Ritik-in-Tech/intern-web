@@ -1,0 +1,240 @@
+@import "../../../../variables";
+
+.mainUserContainer {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  .backButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    &:hover {
+      background-color: $WhiteHover;
+    }
+    .title {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .backIcon {
+      font-size: 1.5em;
+      margin-right: 10px;
+    }
+  }
+}
+
+.usersContainer {
+  padding: 20px;
+  height: auto;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.selectMainContainer {
+  width: $trainingSidebarWidth;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.videoIcon {
+  font-size: 1.5em;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.memberTitle,
+.memberItems {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.member {
+  margin-left: 16px;
+}
+
+.memberTitle {
+  color: $TextLabel;
+  font-size: 13px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.addIcon {
+  cursor: pointer;
+  color: green;
+  font-size: 1.2em;
+  margin-left: 10px;
+  /* width: 24px;
+    height: 24px; */
+}
+
+.groupIcon {
+  font-size: 2em;
+  color: rgba(0, 0, 255, 0.712);
+}
+
+.removeIcon {
+  cursor: pointer;
+  color: red;
+  font-size: 1.2em;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.tableContainer {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: auto;
+}
+
+.selectedUsersTable {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 400px;
+}
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.searchIcon {
+  margin-right: 8px;
+  color: #999;
+  /* size: 10px; */
+}
+
+.searchInput {
+  border: none;
+  padding: 12px 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.selectContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.selectContainer::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 5px;
+}
+
+.selectContainer::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.paginationButton {
+  background-color: #1a71b97a;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 8px 10px 8px 10px;
+  width: 15%;
+  cursor: pointer;
+}
+
+.pageNumber {
+  margin: 0 10px;
+}
+
+.submitButton {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  background-color: $Button;
+  color: white;
+  font-weight: 600;
+  &:hover {
+    background-color: $ButtonHover;
+  }
+  &:active {
+    background-color: $ButtonActive;
+  }
+}
+
+.submitButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
+  background-color: $ButtonDisabled;
+}

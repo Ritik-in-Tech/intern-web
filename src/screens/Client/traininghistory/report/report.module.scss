@@ -1,0 +1,46 @@
+@import "../../../../variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: 20px;
+  height: auto;
+  border-radius: 15px;
+  width: 900px;
+  background-color: white;
+}
+
+.buttonCell button {
+  margin-left: auto;
+}
+
+.tabContainer {
+  display: inline-block;
+  padding: 6px;
+  background: $LightGray;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  .tabButton {
+    padding: 8px 20px;
+    margin-right: 5px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover {
+      background-color: $LightGrayHover;
+    }
+  }
+  .selectedTab {
+    background-color: $ClientPrimary;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    &:hover {
+      background-color: $ClientPrimary;
+    }
+  }
+}

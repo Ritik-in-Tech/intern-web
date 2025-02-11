@@ -1,0 +1,29 @@
+@import "../../../_variables.scss";
+
+.container {
+  display: flex;
+  gap: 24px;
+  background-color: $WhiteHover;
+  border: solid 1px $Border;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: fit-content;
+  margin-bottom: 24px;
+}
+
+.items {
+  align-items: center;
+}
+
+.label {
+  font-size: 13px;
+  color: $TextLabel;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 400;
+  color: $Text;
+}

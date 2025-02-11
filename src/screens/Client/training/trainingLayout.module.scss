@@ -1,0 +1,11 @@
+@import "../../../variables";
+
+.maincontainer {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+  gap: 24px;
+  justify-content: center;
+  background-color: $LightGray;
+}

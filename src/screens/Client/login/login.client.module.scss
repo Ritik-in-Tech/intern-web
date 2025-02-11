@@ -1,0 +1,89 @@
+/* src/components/login.module.scss */
+@import "../../../_variables.scss";
+
+.container {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $LightGray;
+}
+
+.loginBox {
+  background-color: $White;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 470px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.title {
+  color: $White;
+  background-color: $ClientPrimary;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+
+  &__logo {
+    font-size: 1.3rem;
+  }
+  &__role {
+    font-size: 1rem;
+  }
+}
+
+.form {
+  padding: 40px 40px 56px;
+}
+
+.inputGroup {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 16px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 10px;
+  margin-top: 32px;
+  color: $White;
+  background-color: $ButtonGray;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  &:hover {
+    background-color: $ButtonGrayHover;
+  }
+}
+
+.toast-container {
+  width: 100px;
+}
+
+.toast-message {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+}

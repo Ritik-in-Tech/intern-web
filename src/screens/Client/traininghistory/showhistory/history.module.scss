@@ -1,0 +1,127 @@
+@import "../../../../variables.scss";
+
+.title {
+  font-size: 14px;
+  color: $TextLabel;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.name {
+  color: rgba(0, 0, 0, 0.808);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.videoContainer {
+  margin-top: 24px;
+  .totalDuration {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid $Border;
+    background-color: $WhiteHover;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    color: $Text;
+    font-weight: 600;
+    margin-bottom: 16px;
+    span {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.stateValue {
+  margin-right: 8px;
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.videoList {
+  border: 1px solid $Border;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1200px;
+  .videoItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid $Border;
+    &:last-child {
+      border-bottom: none;
+    }
+    .videoNumber {
+      font-size: 15px;
+      font-weight: 600;
+      padding-left: 12px;
+    }
+    .duration {
+      font-size: 15px;
+    }
+    .thumbnailContainer {
+      flex-shrink: 0;
+      height: 60px;
+      aspect-ratio: 3 / 2;
+      position: relative;
+      background-color: $LightGray;
+      border-radius: 8px;
+      overflow: hidden;
+      .thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .videoTitle {
+      color: $Text;
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 18px;
+      margin-left: 10px;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+    .mainDetailsContainer {
+      margin-top: 8px;
+    }
+  }
+}
+
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  .tag {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #333;
+  }
+}

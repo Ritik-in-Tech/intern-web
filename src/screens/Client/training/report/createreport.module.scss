@@ -1,0 +1,183 @@
+@import "../../../../variables";
+
+.container {
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+  height: auto;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  background-color: white;
+  .title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+.emojiRatingContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.emojiRow {
+  display: flex;
+  align-items: center;
+}
+
+.emojiWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.ratingNumber {
+  font-size: 12px;
+  /* margin-bottom: 4px; */
+  color: #666;
+}
+
+.emoji {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.emoji:hover {
+  transform: scale(1.2);
+}
+
+.beforeText,
+.afterText {
+  font-size: 15px;
+  color: black;
+  margin-top: 10px;
+  /* margin: 4px 4px; */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submitButton {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 220px;
+  background-color: $Button;
+  color: white;
+  font-weight: 600;
+  &:hover {
+    background-color: $ButtonHover;
+  }
+  &:active {
+    background-color: $ButtonActive;
+  }
+}
+
+.submitButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+}
+
+.ratingLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin: 0 12px;
+  color: $TextLabel;
+  font-weight: 600;
+  font-size: 12px;
+  &[data-rating="good"] {
+    color: $Green600;
+  }
+  &[data-rating="bad"] {
+    color: $Red600;
+  }
+}
+
+.ratingCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2px;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+}
+
+.ratingCircle.selected {
+  color: white;
+  &[data-value="1"],
+  &[data-value="2"] {
+    background-color: $Red600;
+    border: 1px solid $Red600;
+  }
+  &[data-value="3"],
+  &[data-value="4"] {
+    background-color: $Orange500;
+    border: 1px solid $Orange500;
+  }
+  &[data-value="5"],
+  &[data-value="6"] {
+    background-color: $Yellow500;
+    border: 1px solid $Yellow500;
+  }
+  &[data-value="7"],
+  &[data-value="8"] {
+    background-color: $Lime500;
+    border: 1px solid $Lime500;
+  }
+  &[data-value="9"],
+  &[data-value="10"] {
+    background-color: $Green600;
+    border: 1px solid $Green600;
+  }
+}
+
+.changesContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.aspectRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.aspectLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding-right: 8px;
+  margin-right: 8px;
+  font-weight: 600;
+  font-size: 12px;
+}

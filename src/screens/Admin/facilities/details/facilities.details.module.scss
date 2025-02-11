@@ -1,0 +1,81 @@
+.facilityContainer {
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+
+  border-radius: 8px;
+}
+
+.pagePath {
+  display: flex;
+  align-items: center;
+}
+
+.rowButton {
+  cursor: pointer;
+}
+
+.text {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.boldtext {
+  font-size: 15px;
+  margin-right: 10px;
+  color: black;
+  font-weight: 700;
+}
+
+.facilitySection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  margin: 0;
+}
+
+.buttonOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editButton {
+  margin-right: 10px;
+  width: 150px;
+}
+
+.deleteButton {
+  width: 150px;
+}
+
+.separator {
+  height: 1px;
+  background-color: rgba(3, 3, 3, 0.349);
+  border: none;
+  margin-bottom: 20px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.detailLabel {
+  /* font-weight: 600; */
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.detailContent {
+  padding: 2px;
+  color: #555;
+}
